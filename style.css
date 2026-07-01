@@ -55,17 +55,32 @@ h2, h3 {
     box-shadow: 0px 6px 18px rgba(0,0,0,0.08);
 }
 
-/* File uploader */
+/* File uploader container */
 [data-testid="stFileUploader"] {
-    background: white !important;
+    background: #FFFFFF !important;
     border: 2px dashed #3B82F6 !important;
     border-radius: 18px !important;
     padding: 25px !important;
 }
 
-[data-testid="stFileUploader"] * {
+/* Force ALL uploader text visible */
+[data-testid="stFileUploader"] div,
+[data-testid="stFileUploader"] span,
+[data-testid="stFileUploader"] small,
+[data-testid="stFileUploader"] label,
+[data-testid="stFileUploader"] p {
     color: #111827 !important;
+    opacity: 1 !important;
     font-weight: 600 !important;
+}
+
+/* Browse button */
+[data-testid="stFileUploader"] button {
+    background: #2563EB !important;
+    color: white !important;
+    border-radius: 12px !important;
+    border: none !important;
+    font-weight: 700 !important;
 }
 
 /* Buttons */
